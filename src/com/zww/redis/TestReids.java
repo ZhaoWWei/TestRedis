@@ -27,26 +27,26 @@ public class TestReids {
 //		jedis.mset("k6", "v1","str2","v2","str3","v3");
 //		System.out.println(jedis.mget("str3", "str2"));
 //	
-//		List<String> lists = jedis.lrange("mylist", 0, -1);
-//		
-//		for (String list : lists) {
-//			System.out.println(list);
-//		}
-//		
-//		jedis.sadd("orders", "jd001");
-//		jedis.sadd("orders", "jd002");
-//		jedis.sadd("orders", "jd003");
-//		jedis.sadd("orders", "jd004");
-//		Set<String> smembers = jedis.smembers("orders");
-//		for (String smember : smembers) {
-//			System.out.println(smember);
-//		}
-//		
-//		jedis.srem("orders", "jd001");
-//		Set<String> smembers1 = jedis.smembers("orders");
-//		for (String smember : smembers1) {
-//			System.out.println(smember);
-//		}
+		List<String> lists = jedis.lrange("mylist", 0, -1);
+		
+		for (String list : lists) {
+			System.out.println(list);
+		}
+		
+		jedis.sadd("orders", "jd001");
+		jedis.sadd("orders", "jd002");
+		jedis.sadd("orders", "jd003");
+		jedis.sadd("orders", "jd004");
+		Set<String> smembers = jedis.smembers("orders");
+		for (String smember : smembers) {
+			System.out.println(smember);
+		}
+		
+		jedis.srem("orders", "jd001");
+		Set<String> smembers1 = jedis.smembers("orders");
+		for (String smember : smembers1) {
+			System.out.println(smember);
+		}
 
 		jedis.hset("hash1", "username", "lisi");
 		jedis.hset("hash1", "age", "24");
