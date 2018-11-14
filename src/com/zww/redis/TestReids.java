@@ -12,7 +12,7 @@ import redis.clients.jedis.Jedis;
 public class TestReids {
 	public static void main(String[] args) {
 		Jedis jedis = new Jedis("192.168.122.128", 6379);
-
+//redis具体的操作
 		System.out.println(jedis.ping());
 
 //		Set<String> keys = jedis.keys("*");
