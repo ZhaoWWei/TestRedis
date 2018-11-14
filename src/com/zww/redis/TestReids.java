@@ -15,11 +15,11 @@ public class TestReids {
 //redis具体的操作
 		System.out.println(jedis.ping());
 
-//		Set<String> keys = jedis.keys("*");
-//		
-//		for (String key : keys) {
-//			System.out.println(key);
-//		}
+		Set<String> keys = jedis.keys("*");
+		
+		for (String key : keys) {
+			System.out.println(key);
+		}
 //		System.out.println("jedists ====> " + jedis.exists("k1"));
 //		System.out.println(jedis.ttl("k1"));
 //		jedis.set("k5", "zhangsan");
